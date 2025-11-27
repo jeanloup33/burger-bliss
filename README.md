@@ -8,6 +8,8 @@
 
 Site web premium pour Burger Bliss, un food truck gourmet parisien proposant des burgers artisanaux de qualité. Application web progressive (PWA) avec design moderne, animations fluides et conformité RGPD.
 
+URL de production : https://burgertruck.netlify.app/
+
 ![Burger Bliss Preview](./public/logo_BURGER-BLISS-512.webp)
 
 ## ✨ Fonctionnalités
