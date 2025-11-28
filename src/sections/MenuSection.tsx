@@ -158,7 +158,7 @@ export function MenuSection() {
                 </div>
 
                 {/* Categories Tabs */}
-                <div className="flex gap-4 mb-12 overflow-x-auto pb-2 md:justify-center snap-x snap-mandatory [-ms-overflow-style:'none'] [scrollbar-width:'none'] [&::-webkit-scrollbar]:hidden">
+                <div className="flex gap-4 mb-12 overflow-x-auto pb-2 md:justify-center snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                     {CATEGORIES.map((cat) => (
                         <Button
                             key={cat.id}

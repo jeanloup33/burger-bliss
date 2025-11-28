@@ -49,6 +49,19 @@
   }
   body {
     @apply bg-background text-foreground font-sans;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  *, ::before, ::after {
+    --tw-backdrop-blur: 0;
+    --tw-backdrop-brightness: 1;
+    --tw-backdrop-contrast: 1;
+    --tw-backdrop-grayscale: 0;
+    --tw-backdrop-hue-rotate: 0deg;
+    --tw-backdrop-invert: 0;
+    --tw-backdrop-opacity: 1;
+    --tw-backdrop-saturate: 1;
+    --tw-backdrop-sepia: 0;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
