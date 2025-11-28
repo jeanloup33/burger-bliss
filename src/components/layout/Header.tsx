@@ -104,12 +104,12 @@ export function Header() {
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: '100%' }}
                             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                            className="fixed inset-0 bg-bliss-cream/95 z-[60] flex flex-col items-center justify-center gap-8 md:hidden px-6 text-center overflow-y-auto pt-24 pb-16"
+                            className="fixed inset-0 z-[60] md:hidden overflow-y-auto bg-white px-6 pt-24 pb-16 flex flex-col items-center gap-10 text-center shadow-lg"
                             role="dialog"
                             aria-modal="true"
                         >
                             <button
-                                className="absolute top-6 right-6 p-2 rounded-full bg-white text-bliss-brown shadow-md"
+                                className="absolute top-6 right-6 p-2 rounded-full bg-bliss-cream text-bliss-brown shadow-md border border-white/60"
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 aria-label="Fermer le menu"
                             >
@@ -120,7 +120,7 @@ export function Header() {
                                     key={link.label}
                                     href={link.href}
                                     onClick={() => setIsMobileMenuOpen(false)}
-                                    className="text-3xl font-heading font-bold text-bliss-brown hover:text-bliss-orange transition-colors"
+                                    className="text-2xl font-heading font-bold text-bliss-brown hover:text-bliss-orange transition-colors w-full max-w-sm py-3 rounded-lg bg-bliss-cream/70 border border-white/80 shadow-sm"
                                 >
                                     {link.label}
                                 </a>
@@ -128,7 +128,7 @@ export function Header() {
                             <Button
                                 asChild
                                 size="lg"
-                                className="bg-bliss-orange text-white text-xl px-8 py-6 rounded-full mt-4"
+                                className="bg-bliss-orange text-white text-xl px-8 py-6 rounded-full mt-2 w-full max-w-sm"
                             >
                                 <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Commander maintenant</a>
                             </Button>
