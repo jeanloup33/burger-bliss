@@ -103,26 +103,25 @@ export function LocationsSection() {
                         ))}
                     </div>
 
-                    {/* Map Placeholder */}
+                    {/* Map Embed */}
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
-                        className="h-[500px] bg-gray-800 rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 relative group"
+                        className="h-[500px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 relative"
                     >
-                        {/* Interactive Map Placeholder Image */}
-                        <img
-                            src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1000&auto=format&fit=crop"
-                            alt="Map location"
-                            className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500"
+                        <iframe
+                            title="Emplacement Burger Bliss - Pessac Centre"
+                            src="https://www.google.com/maps?q=44.80534649337742,-0.6299111751392525&hl=fr&z=15&output=embed"
+                            className="w-full h-full border-0"
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
                         />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="bg-white/90 backdrop-blur-sm p-6 rounded-xl text-center shadow-xl">
-                                <MapPin className="h-10 w-10 text-bliss-orange mx-auto mb-2 animate-bounce" />
-                                <p className="text-bliss-brown font-bold text-lg">Carte Interactive</p>
-                                <p className="text-sm text-gray-600">(Google Maps Integration)</p>
-                            </div>
+                        <div className="absolute top-4 left-4 bg-white/90 text-bliss-brown px-4 py-2 rounded-full shadow-lg backdrop-blur-sm flex items-center gap-2">
+                            <MapPin className="h-4 w-4 text-bliss-orange" />
+                            <span className="text-sm font-semibold">Centre-ville de Pessac</span>
                         </div>
                     </motion.div>
 
