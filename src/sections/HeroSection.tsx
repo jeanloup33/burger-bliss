@@ -19,7 +19,7 @@ export function HeroSection() {
             >
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70 z-10" />
                 {/* Placeholder for background image */}
-                <div className="w-full h-full bg-slate-900 bg-[url('/images/hero-burger.jpg')] bg-cover bg-center" />
+                <div className="w-full h-full bg-slate-900 bg-[url('/images/hero-burger.avif')] bg-cover bg-center" />
             </motion.div>
 
             <div className="relative z-10 text-center text-white space-y-8 px-4 max-w-4xl mx-auto">
