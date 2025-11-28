@@ -48,8 +48,8 @@ export function HistorySection() {
                     >
                         <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
                             <img
-                                src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200&auto=format&fit=crop"
-                                alt="Burger gourmet avec cheddar fondant"
+                                src="/images/notre_histoire.avif"
+                                alt="Burger Bliss en pleine preparation"
                                 className="w-full h-[500px] object-cover"
                             />
                         </div>

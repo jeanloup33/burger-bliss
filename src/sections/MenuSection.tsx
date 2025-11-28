@@ -17,7 +17,7 @@ const PRODUCTS: Record<string, Product[]> = {
             name: 'Le Classic Bliss',
             description: 'Steak haché Black Angus, Cheddar affiné, Salade, Tomate, Oignons caramélisés, Sauce secrète Bliss.',
             price: 12,
-            image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/classic_bliss.avif',
             tags: ['best-seller']
         },
         {
@@ -25,7 +25,7 @@ const PRODUCTS: Record<string, Product[]> = {
             name: 'The Smoky Joe',
             description: 'Double steak, Bacon croustillant, Sauce BBQ maison, Onion rings, Cheddar fumé.',
             price: 14,
-            image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/smoky_joe.avif',
             tags: ['new']
         },
         {
@@ -33,7 +33,7 @@ const PRODUCTS: Record<string, Product[]> = {
             name: 'Veggie Dream',
             description: 'Galette de quinoa et haricots rouges, Avocat, Roquette, Sauce yaourt-herbes, Tomates séchées.',
             price: 13,
-            image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/veggie_burger.avif',
             tags: ['veggie']
         },
         {
@@ -41,7 +41,7 @@ const PRODUCTS: Record<string, Product[]> = {
             name: 'Spicy Chicken',
             description: 'Poulet frit croustillant, Jalapeños, Cheddar, Sauce sriracha-mayo, Pickles.',
             price: 13.5,
-            image: 'https://images.unsplash.com/photo-1615297928064-24977384d0f9?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/speecy_chicken.avif',
             tags: ['spicy']
         }
     ],
@@ -51,7 +51,7 @@ const PRODUCTS: Record<string, Product[]> = {
             name: 'Frites Maison',
             description: 'Pommes de terre fraîches, double cuisson, sel de Guérande.',
             price: 4,
-            image: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/frites.avif',
             tags: ['best-seller']
         },
         {
@@ -59,14 +59,14 @@ const PRODUCTS: Record<string, Product[]> = {
             name: 'Onion Rings',
             description: 'Rondelles d\'oignons frits dans une pâte à la bière.',
             price: 5,
-            image: 'https://images.unsplash.com/photo-1639024471283-03518883512d?q=80&w=1000&auto=format&fit=crop'
+            image: '/images/onion_rings.avif'
         },
         {
             id: 's3',
             name: 'Salade Caesar',
             description: 'Romaine, croûtons à l\'ail, parmesan, sauce Caesar maison.',
             price: 6,
-            image: 'https://images.unsplash.com/photo-1550304943-4f24f54ddde9?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/salade_caesar.avif',
             tags: ['veggie']
         },
         {
@@ -74,7 +74,7 @@ const PRODUCTS: Record<string, Product[]> = {
             name: 'Fish & Chips',
             description: 'Cabillaud frais pané, sauce tartare, quartier de citron.',
             price: 9,
-            image: 'https://images.unsplash.com/photo-1579208575657-c595a05383b7?q=80&w=1000&auto=format&fit=crop'
+            image: '/images/fish-and-chips.avif'
         }
     ],
     drinks: [
@@ -113,14 +113,14 @@ const PRODUCTS: Record<string, Product[]> = {
             name: 'Cheesecake NY',
             description: 'L\'authentique recette new-yorkaise, coulis de fruits rouges.',
             price: 6,
-            image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=1000&auto=format&fit=crop'
+            image: '/images/cheese_cake.avif'
         },
         {
             id: 'ds2',
             name: 'Cookie Géant',
             description: 'Pépites de chocolat noir et noix de pécan, cœur fondant.',
             price: 3.5,
-            image: 'https://images.unsplash.com/photo-1499636138143-bd630f5cf388?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/cookies_geant.avif',
             tags: ['best-seller']
         },
         {
@@ -128,14 +128,14 @@ const PRODUCTS: Record<string, Product[]> = {
             name: 'Glace Artisanale',
             description: 'Deux boules au choix : Vanille Bourbon, Chocolat, Fraise.',
             price: 4.5,
-            image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=1000&auto=format&fit=crop'
+            image: '/images/glace.avif'
         },
         {
             id: 'ds4',
             name: 'Salade de Fruits',
             description: 'Fruits de saison coupés frais le matin même.',
             price: 4,
-            image: 'https://images.unsplash.com/photo-1568158879083-c42860933ed7?q=80&w=1000&auto=format&fit=crop',
+            image: '/images/glace.avif',
             tags: ['veggie']
         }
     ]
