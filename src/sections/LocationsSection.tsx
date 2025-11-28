@@ -51,7 +51,7 @@ export function LocationsSection() {
     return (
         <section id="locations" className="py-20 bg-bliss-brown text-white relative overflow-hidden">
             {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/food.png')] pointer-events-none" />
+            <div className="absolute inset-0 opacity-5 bg-[url('/images/food-pattern.png')] pointer-events-none" />
 
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center mb-16 space-y-4">
