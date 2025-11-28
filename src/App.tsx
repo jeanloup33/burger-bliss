@@ -8,6 +8,7 @@ import { Header } from '@/components/layout/Header'
 import ReloadPrompt from '@/components/ReloadPrompt'
 import { PWAInstallPrompt } from '@/components/PWAInstallPrompt'
 import { CookieConsent } from '@/components/CookieConsent'
+import { ScrollToTopButton } from '@/components/shared/ScrollToTopButton'
 
 function App() {
     return (
@@ -25,10 +26,12 @@ function App() {
                 <ContactSection />
             </main>
 
+            <ScrollToTopButton />
+
             <footer className="bg-bliss-brown text-white py-8 text-center">
                 <div className="container mx-auto px-4">
                     <p className="text-sm opacity-70">
-                        &copy; {new Date().getFullYear()} Burger Bliss. Tous droits réservés. Fait avec ❤️ et beaucoup de gras.
+                        &copy; {new Date().getFullYear()} Burger Bliss. Tous droits reserves. Fait avec amour et beaucoup de gras.
                     </p>
                 </div>
             </footer>
