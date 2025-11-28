@@ -16,6 +16,17 @@ export function Header() {
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
+    useEffect(() => {
+        if (isMobileMenuOpen) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = ''
+        }
+        return () => {
+            document.body.style.overflow = ''
+        }
+    }, [isMobileMenuOpen])
+
     const navLinks = [
         { href: '#', label: 'Accueil' },
         { href: '#menu', label: 'Menu' },
@@ -93,10 +104,17 @@ export function Header() {
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: '100%' }}
                             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                            className="fixed inset-0 bg-bliss-cream/95 z-[60] flex flex-col items-center justify-center gap-8 md:hidden"
+                            className="fixed inset-0 bg-bliss-cream/95 z-[60] flex flex-col items-center justify-center gap-8 md:hidden px-6 text-center overflow-y-auto pt-24 pb-16"
                             role="dialog"
                             aria-modal="true"
                         >
+                            <button
+                                className="absolute top-6 right-6 p-2 rounded-full bg-white text-bliss-brown shadow-md"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                aria-label="Fermer le menu"
+                            >
+                                <X size={24} />
+                            </button>
                             {navLinks.map((link) => (
                                 <a
                                     key={link.label}
