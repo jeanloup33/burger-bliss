@@ -6,44 +6,51 @@ const LOCATIONS = [
     {
         id: 1,
         day: 'Lundi',
-        place: 'Place de la Mairie',
+        place: 'Halles de Talence',
         time: '11h30 - 14h30',
-        address: '12 Place de l\'Hôtel de Ville, 75004 Paris'
+        address: '214 Cours Gambetta, 33400 Talence'
     },
     {
         id: 2,
         day: 'Mardi',
-        place: 'Zone Tech - La Défense',
+        place: "Parc de l'Ermitage",
         time: '11h30 - 14h30',
-        address: 'Parvis de la Défense, 92800 Puteaux'
+        address: "12 Avenue de l'Ermitage, 33110 Le Bouscat"
     },
     {
         id: 3,
         day: 'Mercredi',
-        place: 'Marché des Batignolles',
+        place: 'Campus Pessac',
         time: '11h30 - 14h30',
-        address: 'Boulevard des Batignolles, 75017 Paris'
+        address: '3 Avenue des Facultes, 33600 Pessac'
     },
     {
         id: 4,
         day: 'Jeudi',
-        place: 'Campus Universitaire',
+        place: 'Parc du Vivier',
         time: '11h30 - 14h30',
-        address: '45 Rue des Saints-Pères, 75006 Paris'
+        address: '1 Avenue des Freres Robinson, 33700 Merignac'
     },
     {
         id: 5,
         day: 'Vendredi',
-        place: 'Zone Business - Station F',
+        place: 'Quais de Bordeaux - Hangar 17',
         time: '11h30 - 15h00',
-        address: '5 Parvis Alan Turing, 75013 Paris'
+        address: 'Quai des Chartrons, 33000 Bordeaux'
     },
     {
         id: 6,
         day: 'Samedi Soir',
-        place: 'Quais de Seine - Event',
+        place: 'Place du Centre - Begles',
         time: '19h00 - 23h00',
-        address: 'Port de la Gare, 75013 Paris'
+        address: '9 Rue Calixte Camelle, 33130 Begles'
+    },
+    {
+        id: 7,
+        day: 'Dimanche',
+        place: 'Marche de Gradignan',
+        time: '10h30 - 14h00',
+        address: "Place de l'Eglise, 33170 Gradignan"
     }
 ]
 
@@ -56,7 +63,7 @@ export function LocationsSection() {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center mb-16 space-y-4">
                     <h2 className="text-4xl md:text-5xl font-heading text-bliss-cream">
-                        Où nous trouver ?
+                        Ou nous trouver ?
                     </h2>
                     <div className="w-20 h-1 bg-bliss-orange rounded-full mx-auto" />
                     <p className="text-bliss-cream/80 max-w-2xl mx-auto text-lg">
