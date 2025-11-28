@@ -62,7 +62,7 @@ export function ContactSection() {
     ]
 
     return (
-        <section id="contact" className="relative py-24 overflow-hidden bg-gradient-to-br from-bliss-cream via-white to-orange-50">
+        <section id="contact" className="relative py-24 overflow-hidden bg-gradient-to-br from-bliss-cream via-white to-orange-50 scroll-mt-28 md:scroll-mt-32">
             {/* Animated Background Elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <motion.div

@@ -64,11 +64,14 @@ export function Header() {
                         </a>
                     ))}
                     <Button
+                        asChild
                         size="lg"
                         className="bg-bliss-orange hover:bg-bliss-orange/90 text-white font-bold rounded-full px-6 shadow-lg hover:shadow-xl transition-all hover:scale-105"
                     >
-                        <ShoppingBag className="mr-2 h-5 w-5" />
-                        Commander
+                        <a href="#contact">
+                            <ShoppingBag className="mr-2 h-5 w-5 inline-block" />
+                            Commander
+                        </a>
                     </Button>
                 </nav>
 
@@ -76,6 +79,8 @@ export function Header() {
                 <button
                     className="md:hidden relative z-50 p-2 text-bliss-orange"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    aria-label={isMobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+                    aria-expanded={isMobileMenuOpen}
                 >
                     {isMobileMenuOpen ? <X size={32} /> : <Menu size={32} className={isScrolled ? "text-bliss-brown" : "text-white"} />}
                 </button>
@@ -88,7 +93,9 @@ export function Header() {
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: '100%' }}
                             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                            className="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center gap-8 md:hidden"
+                            className="fixed inset-0 bg-bliss-cream/95 z-[60] flex flex-col items-center justify-center gap-8 md:hidden"
+                            role="dialog"
+                            aria-modal="true"
                         >
                             {navLinks.map((link) => (
                                 <a
@@ -101,10 +108,11 @@ export function Header() {
                                 </a>
                             ))}
                             <Button
+                                asChild
                                 size="lg"
                                 className="bg-bliss-orange text-white text-xl px-8 py-6 rounded-full mt-4"
                             >
-                                Commander maintenant
+                                <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Commander maintenant</a>
                             </Button>
                         </motion.div>
                     )}

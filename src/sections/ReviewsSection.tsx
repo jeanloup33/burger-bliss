@@ -47,7 +47,7 @@ const REVIEWS = [
 
 export function ReviewsSection() {
     return (
-        <section id="avis" className="py-20 bg-bliss-cream overflow-hidden">
+        <section id="avis" className="py-20 bg-bliss-cream overflow-hidden scroll-mt-28 md:scroll-mt-32">
             <div className="container mx-auto px-4 mb-12 text-center">
                 <h2 className="text-4xl md:text-5xl font-heading text-bliss-brown mb-4">Ils ont kiffé !</h2>
                 <div className="w-20 h-1 bg-bliss-orange rounded-full mx-auto" />

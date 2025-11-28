@@ -56,7 +56,7 @@ const LOCATIONS = [
 
 export function LocationsSection() {
     return (
-        <section id="locations" className="py-20 bg-bliss-brown text-white relative overflow-hidden">
+        <section id="locations" className="py-20 bg-bliss-brown text-white relative overflow-hidden scroll-mt-28 md:scroll-mt-32">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-5 bg-[url('/images/food-pattern.png')] pointer-events-none" />
 

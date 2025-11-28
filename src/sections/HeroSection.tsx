@@ -57,6 +57,7 @@ export function HeroSection() {
                     >
                         <a href="#locations">Nous Trouver</a>
                     </Button>
+                    <p className="text-sm text-white/80 sm:ml-4 sm:self-center">Commandez ou repérez le camion en un clic.</p>
                 </motion.div>
             </div>
 

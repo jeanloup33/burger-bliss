@@ -145,7 +145,7 @@ export function MenuSection() {
     const [activeCategory, setActiveCategory] = useState('burgers')
 
     return (
-        <section id="menu" className="py-20 bg-white">
+        <section id="menu" className="py-20 bg-white scroll-mt-28 md:scroll-mt-32">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12 space-y-4">
                     <h2 className="text-4xl md:text-5xl font-heading text-bliss-brown">
