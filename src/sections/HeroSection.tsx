@@ -42,11 +42,20 @@ export function HeroSection() {
                     transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
                     className="flex flex-col sm:flex-row gap-6 justify-center items-center"
                 >
-                    <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold text-xl px-10 py-8 rounded-full shadow-2xl hover:scale-105 transition-transform duration-300">
-                        Voir le Menu
+                    <Button
+                        asChild
+                        size="lg"
+                        className="bg-primary hover:bg-primary/90 text-white font-bold text-xl px-10 py-8 rounded-full shadow-2xl hover:scale-105 transition-transform duration-300"
+                    >
+                        <a href="#menu">Voir le Menu</a>
                     </Button>
-                    <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-md border-white/40 text-white hover:bg-white/20 hover:border-white font-bold text-xl px-10 py-8 rounded-full shadow-2xl hover:scale-105 transition-transform duration-300">
-                        Nous Trouver
+                    <Button
+                        asChild
+                        size="lg"
+                        variant="outline"
+                        className="bg-white/10 backdrop-blur-md border-white/40 text-white hover:bg-white/20 hover:border-white font-bold text-xl px-10 py-8 rounded-full shadow-2xl hover:scale-105 transition-transform duration-300"
+                    >
+                        <a href="#locations">Nous Trouver</a>
                     </Button>
                 </motion.div>
             </div>
