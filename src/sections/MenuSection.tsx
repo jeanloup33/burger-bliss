@@ -135,7 +135,7 @@ const PRODUCTS: Record<string, Product[]> = {
             name: 'Salade de Fruits',
             description: 'Fruits de saison coupés frais le matin même.',
             price: 4,
-            image: '/images/glace.avif',
+            image: '/images/salade-de-fruits.avif',
             tags: ['veggie']
         }
     ]
