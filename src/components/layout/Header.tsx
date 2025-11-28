@@ -106,7 +106,7 @@ export function Header() {
                             exit={{ opacity: 0, x: '100%' }}
                             transition={{ type: "spring", damping: 25, stiffness: 200 }}
                             id="mobile-nav"
-                            className="fixed inset-0 z-[60] md:hidden overflow-y-auto bg-white/98 backdrop-blur-sm px-6 py-16 flex flex-col items-center justify-center gap-8 text-center shadow-lg min-h-screen"
+                            className="fixed inset-0 z-[80] md:hidden overflow-y-auto bg-white px-6 py-16 flex flex-col items-center justify-center gap-8 text-center shadow-2xl min-h-screen"
                             role="dialog"
                             aria-modal="true"
                         >
