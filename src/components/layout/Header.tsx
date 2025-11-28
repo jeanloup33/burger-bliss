@@ -92,6 +92,7 @@ export function Header() {
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     aria-label={isMobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
                     aria-expanded={isMobileMenuOpen}
+                    aria-controls="mobile-nav"
                 >
                     {isMobileMenuOpen ? <X size={32} /> : <Menu size={32} className={isScrolled ? "text-bliss-brown" : "text-white"} />}
                 </button>
@@ -104,7 +105,8 @@ export function Header() {
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: '100%' }}
                             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                            className="fixed inset-0 z-[60] md:hidden overflow-y-auto bg-white px-6 pt-24 pb-16 flex flex-col items-center gap-10 text-center shadow-lg"
+                            id="mobile-nav"
+                            className="fixed inset-0 z-[60] md:hidden overflow-y-auto bg-white/98 backdrop-blur-sm px-6 py-16 flex flex-col items-center justify-center gap-8 text-center shadow-lg min-h-screen"
                             role="dialog"
                             aria-modal="true"
                         >
