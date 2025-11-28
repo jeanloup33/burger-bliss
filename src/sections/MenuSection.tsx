@@ -158,13 +158,13 @@ export function MenuSection() {
                 </div>
 
                 {/* Categories Tabs */}
-                <div className="flex flex-wrap justify-center gap-4 mb-12">
+                <div className="flex gap-4 mb-12 overflow-x-auto pb-2 md:justify-center snap-x snap-mandatory [-ms-overflow-style:'none'] [scrollbar-width:'none'] [&::-webkit-scrollbar]:hidden">
                     {CATEGORIES.map((cat) => (
                         <Button
                             key={cat.id}
                             variant={activeCategory === cat.id ? 'default' : 'outline'}
                             onClick={() => setActiveCategory(cat.id)}
-                            className={`rounded-full px-6 text-lg transition-all duration-300 ${activeCategory === cat.id
+                            className={`rounded-full px-6 min-w-[160px] text-lg transition-all duration-300 shrink-0 snap-center ${activeCategory === cat.id
                                 ? 'bg-bliss-orange hover:bg-bliss-orange/90 text-white shadow-md scale-105'
                                 : 'hover:border-bliss-orange hover:text-bliss-orange'
                                 }`}
