@@ -88,7 +88,7 @@ export function Header() {
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: '100%' }}
                             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                            className="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-8 md:hidden"
+                            className="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center gap-8 md:hidden"
                         >
                             {navLinks.map((link) => (
                                 <a
