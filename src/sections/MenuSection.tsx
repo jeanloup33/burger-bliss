@@ -83,28 +83,28 @@ const PRODUCTS: Record<string, Product[]> = {
             name: 'Limonade Artisanale',
             description: 'Citron pressé minute, menthe fraîche, peu sucrée.',
             price: 3.5,
-            image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1000&auto=format&fit=crop'
+            image: '/images/limonade.avif'
         },
         {
             id: 'd2',
             name: 'Cola Craft',
             description: 'Cola artisanal bio aux épices douces.',
             price: 4,
-            image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=1000&auto=format&fit=crop'
+            image: '/images/coca-cola.avif'
         },
         {
             id: 'd3',
             name: 'Thé Glacé Pêche',
             description: 'Infusion maison de thé noir, pêche blanche, sans colorant.',
             price: 3.5,
-            image: 'https://images.unsplash.com/photo-1499638673689-79a0b5115d87?q=80&w=1000&auto=format&fit=crop'
+            image: '/images/the.avif'
         },
         {
             id: 'd4',
             name: 'Bière Locale (33cl)',
             description: 'IPA ou Blonde de la brasserie du quartier.',
             price: 5.5,
-            image: 'https://images.unsplash.com/photo-1600788886242-5c96aabe3757?q=80&w=1000&auto=format&fit=crop'
+            image: '/images/biere.avif'
         }
     ],
     desserts: [
