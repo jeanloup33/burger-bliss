@@ -12,7 +12,7 @@ import { ScrollToTopButton } from '@/components/shared/ScrollToTopButton'
 
 function App() {
     return (
-        <div className="min-h-screen bg-background font-sans text-foreground overflow-x-hidden">
+        <div className="relative min-h-screen bg-background font-sans text-foreground overflow-x-hidden">
             <Header />
             <ReloadPrompt />
             <PWAInstallPrompt />
